@@ -1,0 +1,189 @@
+---
+title: "Activity Solutions Sections 1-4"
+author: "Nadia Kennar, Research Associate with the UKDS"
+date: "10th of March 2026"
+output:
+  html_notebook: default
+toc: yes
+---
+
+
+## Solution to Activty 1
+
+```{r}
+subset(sf, crime_type == "Anti-social behaviour") 
+
+drugs <- subset(sf, crime_type == "Drugs") %>%  
+  select(-c(1, 9, 10))      #this line is not necessary but helps to neaten your data as we are removing the columns that are not of interest
+
+ggplot() +
+  annotation_map_tile() +
+  geom_sf(data = drugs) 
+
+```
+
+
+## Solution to Activity 2 
+
+```{r}
+#1)
+
+h <- tm_shape(surrey_lsoa) + 
+  tm_fill("count", style = "bclust") + 
+  tm_borders(alpha = 0.3)
+
+
+b <- tm_shape(surrey_lsoa) + 
+  tm_fill("count", style = "hclust") + 
+  tm_borders(alpha = 0.3)
+
+
+#2) 
+
+tmap_arrange(h, b)
+
+#3) 
+
+tmap_mode("view")
+
+
+tm_shape(surrey_lsoa) + 
+  tm_fill("count", style = "bclust") + 
+  tm_borders(alpha = 0.3)
+
+
+```
+
+
+## Solution to Activity 3
+```{r}
+
+
+# 1) First calculate the crime rate 
+
+surrey_lsoa <- surrey_lsoa %>% 
+  mutate(crime_rate2 = (count/work_count)*1000)
+
+
+#2) Plot using ggplot 
+
+ggplot() + 
+  annotation_map_tile() + 
+  geom_sf(data = surrey_lsoa, aes(fill = crime_rate2), alpha = 0.5) + 
+  scale_fill_gradient2(name ="Crime Rate")
+
+
+#3) Plot using tmap 
+
+tm_shape(surrey_lsoa) + 
+  tm_fill("crime_rate", style = "quantile") + 
+  tm_borders(alpha = 0.3)
+
+
+#4) Compare the workday vs residential population 
+
+e <- tm_shape(surrey_lsoa) + 
+  tm_fill("crime_rate", style = "quantile", title = "Workday Pop") + 
+  tm_borders(alpha = 0.3)
+
+f <- tm_shape(surrey_lsoa) + 
+  tm_fill("crime_rate2", style = "quantile", title = "Residential pop") + 
+  tm_borders(alpha = 0.3)
+
+
+tmap_arrange(e, f)
+
+#5 employment rates by urban/rural (multivariate!) 
+
+tm_shape(surrey_lsoa) +
+  tm_fill("crime_rate2", style = "jenks", palette = "Blues") +
+  tm_facets(by = "urban_rural_flag") +
+  tm_borders("black", lwd = 0.3) +
+  tm_layout(title = "Workday Crime Rates: Urban vs Rural")
+
+```
+
+
+## Solution to Activity 4 
+
+
+```{r}
+## Activity 
+
+Compare the heat maps now using the ASB data WITH the missing values. Follow the steps below by first preparing your dataset and then making the plots. 
+
+*1) Filter for just ASB within Surrey Heath 
+
+```{r}
+asb_data2 <- crime %>%
+  filter(crime_type == "Anti-social behaviour") %>% 
+  filter(str_detect(losa_name, "^Surrey Heath"))
+```
+
+*2) Group by LSOA and summarise the crime count
+
+```{r}
+asb_grouped_by_lsoa2 <- asb_data %>%
+  group_by(lsoa_code) %>%
+  summarise(count =n())
+```
+
+*3) Left_join the new grouped ASB dataset to the shapefile
+
+Remember we are skipping the imputation method here as we want to see the affect of including missing values into our maps. So go ahead and simply join the grouped data to the shapefile
+
+```{r}
+asb_lsoa_missing <- left_join(shp_file, asb_grouped_by_lsoa2, by = c("lsoa21cd" = "lsoa_code"))
+```
+
+*4) Now plot with ggplot 
+
+```{r}
+ggplot(data = asb_lsoa_missing) +
+  geom_sf(aes(fill = count), color = NA) + 
+  scale_fill_viridis_c(option = "magma", direction = -1, na.value = "white", 
+                       guide = guide_colorbar(title = "ASB Count")) + # Adjusts the color scale
+  labs(title = "ASB Incidents by LSOA", 
+       subtitle = "Visualised using ggplot2") + 
+  theme_minimal()
+
+
+```
+
+*5) Now plot with leaflet 
+
+```{r}
+# Define a color palette function based on the 'count' column
+colorPalette <- colorNumeric(palette = "viridis", domain = asb_lsoa_missing$count, na.color = "transparent")
+
+# remember to first transform the object into the correct CRS
+asb_lsoa_missing <- st_transform(asb_lsoa_missing, 4326)
+
+# Create the Leaflet map
+leaflet(asb_lsoa_missing) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% # Adds a light-themed base map
+  addPolygons(
+    fillColor = ~colorPalette(count), 
+    weight = 1, # Border weight
+    opacity = 1, # Border opacity
+    color = "white", # Border color
+    fillOpacity = 0.7, # Fill opacity
+    popup = ~paste0("LSOA: ", lsoa21cd, "<br>Count: ", count) 
+  ) %>%
+  addLegend("bottomright", pal = colorPalette, values = ~count,
+            title = "ASB Counts",
+            opacity = 1)
+
+```
+
+
+
+
+Data Citation: 
+
+1.	UK Police API. (2026). Street-level crime data. data.police.uk. Retrieved February 27, 2026, from https://data.police.uk
+2.	UK Data Service Census Support. (2021). England LSOA boundaries 2021. Retrieved from https://borders.ukdataservice.ac.uk 
+3.	Office for National Statistics. (2022). Census 2021 Table TS001: Number of usual residents. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+4.	Office for National Statistics. (2022). Census 2021 Table TS066: Economic acitivty. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+5.	Office for National Statistics. (2021). Rural Urban Classification (2021) of LSOAs in England and Wales. Open Geography Portal. Retrieved from https://geoportal.statistics.gov.uk 
+
