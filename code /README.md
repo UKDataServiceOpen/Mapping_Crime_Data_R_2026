@@ -5,11 +5,19 @@ This workshop will guide you through crime data analysis and spatial mapping in 
 
 ### 🚀 Getting Started  
 
-You have **two options** to run the workshop:  
+You have **three options** to run the workshop:  
 
 1️⃣ **Run Locally in RStudio**: Download the files and run them on your computer.  
-2️⃣ **Run Online in Google Colab (Recommended!)**: Only package installation required. 
-3️⃣ **Run Online with Posit 
+2️⃣ **Run Online with Posit**  
+3️⃣ **Run Online in Google Colab**
+
+## Open in R 
+
+Simply follow the instructions in the Prerequisties.Rmd file. 
+
+## 📌 Open in Posit 
+
+[![Open in Posit Cloud](https://img.shields.io/badge/Open%20in-Posit%20Cloud-blue?logo=rstudio)](https://posit.cloud/content/12005384) 
 
 ### 📌 Open in Google Colab  
 
@@ -27,9 +35,6 @@ Activity_Solutions: [![Open In Colab](https://colab.research.google.com/assets/c
 
 Additonal_Material: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Additional_Topics.ipynb) 
 
-## 📌 Open in Posit 
-
-[![Open in Posit Cloud](https://img.shields.io/badge/Open%20in-Posit%20Cloud-blue?logo=rstudio)](https://posit.cloud/content/12005384) 
 
 ---
 
