@@ -14,23 +14,17 @@ You have **two options** to run the workshop:
 
 Prerequistes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Prerequisites.ipynb)
 
-1_Exploring_Crime_Data: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/1_Exploring_Crime_Data.ipynb)
+1_Exploring_Crime_Data: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/1_Exploring_Crime_Data.ipynb)
 
-2_Shapefiles: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/2_Shapefiles.ipynb) 
+2_Shapefiles: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/2_Shapefiles.ipynb) 
 
-3_Census [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/3_Census.ipynb) 
+3_Census [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/3_Census.ipynb) 
 
-4_Spatial_Analysis [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/4_Spatial_Analysis.ipynb) 
+4_Spatial_Analysis [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/4_Spatial_Analysis.ipynb) 
 
-Activity_Solutions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Activity_Solutions.ipynb) 
+Activity_Solutions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Activity_Solutions.ipynb) 
 
-Additonal_Material: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Additional_Topics.ipynb) 
+Additonal_Material: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Additional_Topics.ipynb) 
 
 
 
