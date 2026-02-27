@@ -29,3 +29,17 @@ This repository contains all the **materials, code, resources, and extras** for 
  
 
 Happy coding! 🖥️📊  
+
+
+## 📊 Data Sources
+
+1. **Crime Data**  
+   UK Police API. (2026). Street-level crime data. *data.police.uk*. Retrieved February 27, 2026, from https://data.police.uk
+2. **LSOA Boundaries**  
+   UK Data Service Census Support. (2021). England LSOA boundaries 2021. Retrieved from https://borders.ukdataservice.ac.uk
+3. **Resident Population**  
+   Office for National Statistics. (2022). Census 2021 Table TS001: Number of usual residents. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+4. **Economic Activity**  
+   Office for National Statistics. (2022). Census 2021 Table TS066: Economic activity. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+5. **Rural Urban Classification**  
+   Office for National Statistics. (2021). Rural Urban Classification (2021) of LSOAs in England and Wales. Open Geography Portal. Retrieved from https://geoportal.statistics.gov.uk
