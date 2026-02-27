@@ -12,7 +12,7 @@ You have **two options** to run the workshop:
 
 ### 📌 Open the Crime Mapping Workshop in Google Colab  
 
-
+Prerequistes: [[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Prerequisites.ipynb)
 
 ---
 
