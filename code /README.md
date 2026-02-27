@@ -8,11 +8,31 @@ This workshop will guide you through crime data analysis and spatial mapping in 
 You have **two options** to run the workshop:  
 
 1️⃣ **Run Locally in RStudio**: Download the files and run them on your computer.  
-2️⃣ **Run Online in Google Colab (Recommended!)**: No installations required—just click the link below:  
+2️⃣ **Run Online in Google Colab (Recommended!)**: Only package installation required.  
 
 ### 📌 Open the Crime Mapping Workshop in Google Colab  
 
-Prerequistes: [[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Prerequisites.ipynb)
+Prerequistes: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Prerequisites.ipynb)
+
+1_Exploring_Crime_Data: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/1_Exploring_Crime_Data.ipynb)
+
+2_Shapefiles: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/2_Shapefiles.ipynb) 
+
+3_Census [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/3_Census.ipynb) 
+
+4_Spatial_Analysis [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/4_Spatial_Analysis.ipynb) 
+
+Activity_Solutions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Activity_Solutions.ipynb) 
+
+Additonal_Material: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/github/UKDataServiceOpen/Mapping_Crime_Data_R_2026/blob/main/code%20/Additional_Topics.ipynb) 
+
+
 
 ---
 
