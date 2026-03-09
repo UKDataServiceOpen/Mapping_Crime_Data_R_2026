@@ -1,0 +1,233 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBEZWZpbmUgcGF0aCB0byB0aGUgY3JpbWUgZGF0YSBmb2xkZXJcbiNjcmltZV9kYXRhX3BhdGggPC0gXCJEYXRhL2NyaW1lX2RhdGFcIlxuIyBjcmltZV9kYXRhX3BhdGggPC0gXCIvVXNlcnMvdXNlci9Eb2N1bWVudHMvTWFwcGluZ19DcmltZV9EYXRhX1JfMjAyNS9EYXRhL2NyaW1lX2RhdGFcIlxuIyBcbiMgIyBMaXN0IGFsbCBtb250aGx5IGZvbGRlcnMgZHluYW1pY2FsbHkgKGxhc3QgMTIgbW9udGhzKVxuIyBtb250aGx5X2ZvbGRlcnMgPC0gZGlyX2xzKGNyaW1lX2RhdGFfcGF0aCwgdHlwZSA9IFwiZGlyZWN0b3J5XCIpICU+JSB0YWlsKDEyKVxuIyBcbiMgIyBGdW5jdGlvbiB0byByZWFkIGVhY2ggbW9udGgncyBjcmltZSBkYXRhXG4jIHJlYWRfY3JpbWVfZGF0YSA8LSBmdW5jdGlvbihmb2xkZXIpIHtcbiMgICBmaWxlX3BhdGggPC0gZGlyX2xzKGZvbGRlciwgcmVnZXhwID0gXCJzdXJyZXktc3RyZWV0LmNzdiRcIilcbiMgICByZWFkX2NzdihmaWxlX3BhdGgpICU+JVxuIyAgICAgY2xlYW5fbmFtZXMoKSAlPiVcbiMgICAgIG11dGF0ZShtb250aCA9IGJhc2VuYW1lKGZvbGRlcikpICMgRXh0cmFjdCBmb2xkZXIgbmFtZSBhcyBuZXcgY29sdW1uXG4jIH1cbiMgXG4jICMgUmVhZCBhbGwgY3JpbWUgZGF0YSBmcm9tIHRoZSBsYXN0IDEyIG1vbnRoc1xuIyBhbGxfY3JpbWVfZGF0YSA8LSBtYXBfZGZyKG1vbnRobHlfZm9sZGVycywgcmVhZF9jcmltZV9kYXRhKVxuXG4jI1xubGlicmFyeSh0aWR5dmVyc2UpXG5saWJyYXJ5KGZzKVxubGlicmFyeShqYW5pdG9yKVxuXG4jIERlZmluZSBiYXNlIEdpdEh1YiBVUkxcbmdpdGh1Yl9iYXNlIDwtIFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1VLRGF0YVNlcnZpY2VPcGVuL01hcHBpbmdfQ3JpbWVfRGF0YV9SXzIwMjYvbWFpbi9kYXRhL2NyaW1lX2RhdGFcIlxuXG4jIExpc3QgbGFzdCAxMiBtb250aHMgKHVwZGF0ZSBhcyBuZWVkZWQpXG5tb250aHMgPC0gZm9ybWF0KHNlcShTeXMuRGF0ZSgpLCBieSA9IFwiLTEgbW9udGhcIiwgbGVuZ3RoLm91dCA9IDEyKSwgXCIlWS0lbVwiKVxuXG4jIEZ1bmN0aW9uIHRvIGRvd25sb2FkIGFuZCByZWFkIGVhY2ggbW9udGgncyBjcmltZSBkYXRhXG5yZWFkX2NyaW1lX2RhdGEgPC0gZnVuY3Rpb24obW9udGgpIHtcbiAgZmlsZV91cmwgPC0gcGFzdGUwKGdpdGh1Yl9iYXNlLCBcIi9cIiwgbW9udGgsIFwiL1wiLCBtb250aCwgXCItc3VycmV5LXN0cmVldC5jc3ZcIilcbiAgXG4gICMgVGVtcG9yYXJ5IGZpbGUgdG8gc3RvcmUgZG93bmxvYWRlZCBkYXRhXG4gIHRlbXBfZmlsZSA8LSB0ZW1wZmlsZShmaWxlZXh0ID0gXCIuY3N2XCIpXG4gIFxuICAjIERvd25sb2FkIHRoZSBmaWxlXG4gIGRvd25sb2FkLmZpbGUoZmlsZV91cmwsIHRlbXBfZmlsZSwgbW9kZSA9IFwid2JcIilcbiAgXG4gICMgUmVhZCB0aGUgQ1NWIGZpbGVcbiAgcmVhZF9jc3YodGVtcF9maWxlKSAlPiVcbiAgICBjbGVhbl9uYW1lcygpICU+JVxuICAgIG11dGF0ZShtb250aCA9IG1vbnRoKSAjIEFkZCBtb250aCBhcyBhIGNvbHVtblxufVxuXG4jIFJlYWQgYW5kIG1lcmdlIGFsbCBjcmltZSBkYXRhIGZyb20gdGhlIGxhc3QgMTIgbW9udGhzXG5hbGxfY3JpbWVfZGF0YSA8LSBtYXBfZGZyKG1vbnRocywgcG9zc2libHkocmVhZF9jcmltZV9kYXRhLCBOVUxMKSlcbmBgYCJ9 -->
+
+```r
+# Define path to the crime data folder
+#crime_data_path <- \"Data/crime_data\"
+# crime_data_path <- \"/Users/user/Documents/Mapping_Crime_Data_R_2025/Data/crime_data\"
+# 
+# # List all monthly folders dynamically (last 12 months)
+# monthly_folders <- dir_ls(crime_data_path, type = \"directory\") %>% tail(12)
+# 
+# # Function to read each month's crime data
+# read_crime_data <- function(folder) {
+#   file_path <- dir_ls(folder, regexp = \"surrey-street.csv$\")
+#   read_csv(file_path) %>%
+#     clean_names() %>%
+#     mutate(month = basename(folder)) # Extract folder name as new column
+# }
+# 
+# # Read all crime data from the last 12 months
+# all_crime_data <- map_dfr(monthly_folders, read_crime_data)
+
+##
+library(tidyverse)
+library(fs)
+library(janitor)
+
+# Define base GitHub URL
+github_base <- \"https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data\"
+
+# List last 12 months (update as needed)
+months <- format(seq(Sys.Date(), by = \"-1 month\", length.out = 12), \"%Y-%m\")
+
+# Function to download and read each month's crime data
+read_crime_data <- function(month) {
+  file_url <- paste0(github_base, \"/\", month, \"/\", month, \"-surrey-street.csv\")
+  
+  # Temporary file to store downloaded data
+  temp_file <- tempfile(fileext = \".csv\")
+  
+  # Download the file
+  download.file(file_url, temp_file, mode = \"wb\")
+  
+  # Read the CSV file
+  read_csv(temp_file) %>%
+    clean_names() %>%
+    mutate(month = month) # Add month as a column
+}
+
+# Read and merge all crime data from the last 12 months
+all_crime_data <- map_dfr(months, possibly(read_crime_data, NULL))
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+# Define path to the crime data folder
+#crime_data_path <- \"Data/crime_data\"
+# crime_data_path <- \"/Users/user/Documents/Mapping_Crime_Data_R_2025/Data/crime_data\"
+# 
+# # List all monthly folders dynamically (last 12 months)
+# monthly_folders <- dir_ls(crime_data_path, type = \"directory\") %>% tail(12)
+# 
+# # Function to read each month's crime data
+# read_crime_data <- function(folder) {
+#   file_path <- dir_ls(folder, regexp = \"surrey-street.csv$\")
+#   read_csv(file_path) %>%
+#     clean_names() %>%
+#     mutate(month = basename(folder)) # Extract folder name as new column
+# }
+# 
+# # Read all crime data from the last 12 months
+# all_crime_data <- map_dfr(monthly_folders, read_crime_data)
+
+##
+library(tidyverse)
+library(fs)
+library(janitor)
+
+# Define base GitHub URL
+github_base <- \"https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data\"
+
+# List last 12 months (update as needed)
+months <- format(seq(Sys.Date(), by = \"-1 month\", length.out = 12), \"%Y-%m\")
+
+# Function to download and read each month's crime data
+read_crime_data <- function(month) {
+  file_url <- paste0(github_base, \"/\", month, \"/\", month, \"-surrey-street.csv\")
+  
+  # Temporary file to store downloaded data
+  temp_file <- tempfile(fileext = \".csv\")
+  
+  # Download the file
+  download.file(file_url, temp_file, mode = \"wb\")
+  
+  # Read the CSV file
+  read_csv(temp_file) %>%
+    clean_names() %>%
+    mutate(month = month) # Add month as a column
+}
+
+# Read and merge all crime data from the last 12 months
+all_crime_data <- map_dfr(months, possibly(read_crime_data, NULL))
+```"
+"1","trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2026-02/2026-02-surrey-street.csv'
+Warning: downloaded length 0 != reported length 14Warning: cannot open URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2026-02/2026-02-surrey-street.csv': HTTP status was '404 Not Found'trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2026-01/2026-01-surrey-street.csv'
+Warning: downloaded length 0 != reported length 14Warning: cannot open URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2026-01/2026-01-surrey-street.csv': HTTP status was '404 Not Found'trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-12/2025-12-surrey-street.csv'
+Warning: downloaded length 0 != reported length 14Warning: cannot open URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-12/2025-12-surrey-street.csv': HTTP status was '404 Not Found'trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-11/2025-11-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1426410 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+Rows: 6834 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-10/2025-10-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1598805 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Rows: 7583 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-09/2025-09-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1565577 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Rows: 7386 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-08/2025-08-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1667818 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Rows: 7905 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-07/2025-07-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1741571 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+Rows: 8244 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-06/2025-06-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1672492 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Rows: 7860 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-05/2025-05-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1727174 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Rows: 8136 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-04/2025-04-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1576276 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Rows: 7398 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.trying URL 'https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/crime_data/2025-03/2025-03-surrey-street.csv'
+Content type 'text/plain; charset=utf-8' length 1620728 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Rows: 7547 Columns: 12── Column specification ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Delimiter: \",\"
+chr (9): Crime ID, Month, Reported by, Falls within, Location, LSOA code, LSOA name, Crime type, Last outcome category
+dbl (2): Longitude, Latitude
+lgl (1): Context
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+"
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBWaWV3IGRhdGFzZXRcbmhlYWQoYWxsX2NyaW1lX2RhdGEpXG5gYGAifQ== -->
+
+```r
+# View dataset
+head(all_crime_data)
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+# View dataset
+head(all_crime_data)
+```"
+"1","
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6MTIsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNiDDlyAxMiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUE4MVZ6VzRqUlJDZU9IR3lOc2tLS1VJYzREQm5wRVE5MC8rM1hTMGdjZG9JQ05xYlZkMWQ3WXgyTW0zTmpEZkpqUU9QQUcvQUJZbDNRQng1SG00Z2JlaEozRkZzb1dnUEVLMnQvdnVxNjZ1dnF0dnVyejkvUmFldnBsbVdiV2M3NDFHMlBZN1RiSHo2N1pkSEtzdDJSbkd4bGUxa2syRzhqSnNPNDJRL3RnOWoyMTBabmttcXVaZkVBUVh0ZUVuQnhHL2huREVGQlZJWXpVdWt3QUcwQWFLMU0xeFN6cVZ5aWpuT2pFczhqbnVMZ25rbEpDZGNFOEdzVWlpMDlKNmpOSjU3eWpoalJrbHBIU2VsVnVBcHNTV3psSGtuZU9JcHBOS2FhUXFsTjhZNGg1YUlzcFFPUzZCZThBSUFISEwwd2pFWkY2NEVzQVVsVW5rcVNpZE40a0ZpUGFlRjhDeUtWWVp3WmFSMHRDdzFGNFNVRkF2cHBWWEFURkV3TFIxd3F3b2RNN2FPQ1ZwQTRpRmNPRUhWWUxEYU82SW9sOGlOWTg1b0poa3hCSWdxRlJKZHhoUk42Ulh6aGRDb0FXSTRyeEtQTWxRNHhhMFUxQ21Ca2lpR2dvaUN5bEp4QldDNG9aUU1VVmlrWjdFckNpRkJXNDBzc3RxTmM5c3JTY21QaXVLL1hLNUhPUGhtMmJaNGxaK0V1ckw0ZU9EN291THBvT0szUC9UZlA1LzgrdnU3anNudjJWYy8vbVIvK2ZPSGR4MDNzdjc0WlpPSE5tOFEydndFMnRkVk04K2Z0d2p2czNrOWc4a1hwQ0MwNEpML1A4QjZ0UDBYTFZ6VThmVGlEK2pGbzJEcjhUOTQyWjlobThmTzkybjd5ZExFbXhScjViQmRZWjkrVjRVYUc0czVOQzd2OEhJSmRSNjhINkR1VWZlc3l6ODhiYUxJdkdyZVlOZFhjK2lyMEt4TW56MjN3eXJ2UTI0dzcrRTFOcm01aXB6aEp1UFF6cUdwdXZzZUQ1QTlZUHJrdEFGVDR4Qm4wWVlPN2JMSHZGdDJDN1Q5UTk1Wk5yeC91OS9IN3QvYXhqTTRidUQ4THZ2OUZmakV0dFU1enFyMGxJM1BROU9mcFpOdGNSSGFIdDNNWEtXVDlWRFgzZXlpNnMrcUpIOVNoMlplOVV1WC9rNmUxRkhmMmpyWSsvbE82aTdBeklhN0RiZkFvRzhGVEc5bDlWZUxoSHhVUTlmUHdySzNJUm9pSGM1RG0xVHQyYWdhTC91TmpDZHR1RGhPV1IvRU5ocktjbjE5L2RkbWFXeGtUNlZKNE5SQkQ4ZStIVlJsMmRzTmw3MndHREtLVHFQRG05dTA3cnpWYmdDeFNPQ09Cc29Ody9haW1hOU9jaXU3L1J5czVydjM1dnUzOFVmWEc5ZDNGMlB0bTFTbGNRMEc2OFRzOE0xcStqUlc0cVlReDR1MmF0S2xta2EwTys1REQvVmQzVU9ka0p1Y3M3Zi9BUGJMWHE1cENRQUEifQ== -->
+
+<div data-pagedtable=\"false\">
+  <script data-pagedtable-source type=\"application/json\">
+{\"columns\":[{\"label\":[\"crime_id\"],\"name\":[1],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"month\"],\"name\":[2],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"reported_by\"],\"name\":[3],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"falls_within\"],\"name\":[4],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"longitude\"],\"name\":[5],\"type\":[\"dbl\"],\"align\":[\"right\"]},{\"label\":[\"latitude\"],\"name\":[6],\"type\":[\"dbl\"],\"align\":[\"right\"]},{\"label\":[\"location\"],\"name\":[7],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"lsoa_code\"],\"name\":[8],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"lsoa_name\"],\"name\":[9],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"crime_type\"],\"name\":[10],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"last_outcome_category\"],\"name\":[11],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"context\"],\"name\":[12],\"type\":[\"lgl\"],\"align\":[\"right\"]}],\"data\":[{\"1\":\"7395f70da3a9d523ababa1ddbb13a01b952e3a5aa9ba099db5735578d84d54bd\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Other theft\",\"11\":\"Under investigation\",\"12\":\"NA\"},{\"1\":\"d5fce64f8675059064c88e697ff5e7bf5f34544b877cd50298af30c24c34fd65\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Public order\",\"11\":\"Action to be taken by another organisation\",\"12\":\"NA\"},{\"1\":\"17899493a2fbbbddec06227de2a3f651aaade5ef6d471aad2aac13078f362d7b\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Violence and sexual offences\",\"11\":\"Under investigation\",\"12\":\"NA\"},{\"1\":\"e0cf5316f45788b058b77d3229560023e17f7c8a4b11497da5c819a01cd4631a\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Violence and sexual offences\",\"11\":\"Under investigation\",\"12\":\"NA\"},{\"1\":\"056d638a01cc9fd08357e5bd4db94740b0a0828e0925f3b2f84f169e9aa7d3f8\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Violence and sexual offences\",\"11\":\"Unable to prosecute suspect\",\"12\":\"NA\"},{\"1\":\"8b36d85c763d86e7084e6061372858aab5b33001cc4e5b44e51167a9c9e4b2fc\",\"2\":\"2025-11\",\"3\":\"Surrey Police\",\"4\":\"Surrey Police\",\"5\":\"-0.197082\",\"6\":\"51.16081\",\"7\":\"On or near Parking Area\",\"8\":\"E01031575\",\"9\":\"Crawley 001C\",\"10\":\"Violence and sexual offences\",\"11\":\"Under investigation\",\"12\":\"NA\"}],\"options\":{\"columns\":{\"min\":{},\"max\":[10],\"total\":[12]},\"rows\":{\"min\":[10],\"max\":[10],\"total\":[6]},\"pages\":{}}}
+  </script>
+</div>
+
+<!-- rnb-frame-end -->
+"

@@ -1,0 +1,6 @@
+"0","library(stringr)"
+"0","surrey_heath_crimes <- crime %>%"
+"0","  filter(str_detect(lsoa_name, ""^Surrey Heath""))"
+"0",""
+"0","# Explore the filtered dataset"
+"0","head(surrey_heath_crimes)"

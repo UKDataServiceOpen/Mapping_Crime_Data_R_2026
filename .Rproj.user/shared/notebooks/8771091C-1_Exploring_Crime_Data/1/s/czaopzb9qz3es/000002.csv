@@ -1,0 +1,18 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2luc3RhbGwucGFja2FnZXMoXCIpXG4jaW5zdGFsbC5wYWNrYWdlcyhjKFwiZHBseXJcIiwgXCJ0aWR5clwiLCBcInJlYWRyXCIsIFwidGliYmxlXCIsIFwiamFuaXRvclwiLCBcInNmXCIsIFxuICAgICAgICAgICAgICAgICAgIyBcImdnbWFwXCIsIFwiZ2dwbG90MlwiLCBcImdnc3BhdGlhbFwiLCBcInNwZGVwXCIsIFwibGVhZmxldFwiLCBcbiAgICAgICAgICAgICAgICAgICMgXCJSQ29sb3JCcmV3ZXJcIiwgXCJ0bWFwXCIsIFwiY2FydG9ncmFtXCIsIFwicHJldHR5bWFwclwiKSlcbmBgYCJ9 -->
+
+```r
+#install.packages(\")
+#install.packages(c(\"dplyr\", \"tidyr\", \"readr\", \"tibble\", \"janitor\", \"sf\", 
+                  # \"ggmap\", \"ggplot2\", \"ggspatial\", \"spdep\", \"leaflet\", 
+                  # \"RColorBrewer\", \"tmap\", \"cartogram\", \"prettymapr\"))
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+#install.packages(\")
+#install.packages(c(\"dplyr\", \"tidyr\", \"readr\", \"tibble\", \"janitor\", \"sf\", 
+                  # \"ggmap\", \"ggplot2\", \"ggspatial\", \"spdep\", \"leaflet\", 
+                  # \"RColorBrewer\", \"tmap\", \"cartogram\", \"prettymapr\"))
+```"

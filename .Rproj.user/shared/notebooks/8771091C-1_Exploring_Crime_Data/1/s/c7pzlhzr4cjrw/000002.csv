@@ -1,0 +1,22 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3RfY3JzKGNyaW1lKSAgICMgdG8gY2hlY2sgdGhlIGNyc1xuXG5zZiA8LSBzdF9hc19zZihjcmltZSwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgIGNvb3JkcyA9IGMoXCJsb25naXR1ZGVcIiwgXCJsYXRpdHVkZVwiKSxcbiAgICAgICAgICAgICAgICAgICAgICBjcnMgPSA0MzI2LCAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgbmEuZmFpbCA9IEZBTFNFKVxuYGBgIn0= -->
+
+```r
+st_crs(crime)   # to check the crs
+
+sf <- st_as_sf(crime,                                
+                      coords = c(\"longitude\", \"latitude\"),
+                      crs = 4326,     
+                      na.fail = FALSE)
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+st_crs(crime)   # to check the crs
+
+sf <- st_as_sf(crime,                                
+                      coords = c(\"longitude\", \"latitude\"),
+                      crs = 4326,     
+                      na.fail = FALSE)
+```"

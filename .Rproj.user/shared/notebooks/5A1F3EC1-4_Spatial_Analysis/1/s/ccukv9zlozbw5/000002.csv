@@ -1,0 +1,33 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xlYW5lZF9jcmltZXNfZ3JvdXBlZF9ieV9sc29hIDwtIHN1cnJleV9oZWF0aF9jcmltZXMgJT4lXG4gIGdyb3VwX2J5KGxzb2FfY29kZSkgJT4lXG4gIHN1bW1hcmlzZShjb3VudCA9IG4oKSlcblxuIyBWaWV3IHRoZSBjb3VudCBvZiBjcmltZXMgYnkgdHlwZVxuY2xlYW5lZF9jcmltZXNfZ3JvdXBlZF9ieV9sc29hXG5gYGAifQ== -->
+
+```r
+cleaned_crimes_grouped_by_lsoa <- surrey_heath_crimes %>%
+  group_by(lsoa_code) %>%
+  summarise(count = n())
+
+# View the count of crimes by type
+cleaned_crimes_grouped_by_lsoa
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+cleaned_crimes_grouped_by_lsoa <- surrey_heath_crimes %>%
+  group_by(lsoa_code) %>%
+  summarise(count = n())
+
+# View the count of crimes by type
+cleaned_crimes_grouped_by_lsoa
+```"
+"1","
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NTQsIm5jb2wiOjIsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiNTQgw5cgMiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUExMlUyMDZEUUJSRkJ3cTk0S1VhazhiNER5VlFXbWJtWGYwQW8wbmZERktzalFoTm9lcWozK2RIdFI3b0dkUHNoMU9HTmJOaGNacVpoOXQ1NU0wOUlVUkhPSzR0T2k0TmhmdjBlRDlXUWpnMjNWakNFWVBtK2syTHJtalF3QXVxbUNjR2QwRVlSSUdjU1FRS2dRWVFCd2hDQkJNRUVZSXBnaGtDTkkzUk5FYlRHRTBsbWtvMGxXZ3EwVlNpcVVSVGlhWVNUU1dLS1JSVEtLWlFUS0dZUWpHRllnckZGSW9wYktGQ1U0Mm1HazAxbW1vMDFXaXEwVlNqcVVaVGphWWFURlVRSUFnUlRCQkVDS1lJWmdoaUJCS0JRb0NtSVpxR0lkMmN0YnRUaUQ3VkNkV1Fxa2QxeWN4dDkvdWh6bm51dXQzcWgzbUxkL2x4V2J6ZTViSEQ1WEkxRXMwNWNzcnZjM25lNUVlY0h4MDl6K0hyRFdjZGZvNXo1T0Z4cnM5WEc0NGx0MGcrc29xUEpOdDBJNi9LNURrdEY1bFpsWmJib29ib1lGTisrU2JlOU16K29aLzlmditMNzBqenBETHZNTkJiSkhYaXYyNG9UM2M3aVBUS2RiMHFDd3JaelpuWmhiQzFBVERjRm8zSllweStiWXYzY1FUVG5YV3g1R1kwVFJFc2JQRWZiY2JjSEh2UDhTN0h1MW14WEJYL3pjaVRseXczVDE1a256dzhwMzYwN2ZEWG14VjFpNytUYU9YWFpaMllpSmVXdVNIdGw0dmRINmhpZTlCSUJnQUEifQ== -->
+
+<div data-pagedtable=\"false\">
+  <script data-pagedtable-source type=\"application/json\">
+{\"columns\":[{\"label\":[\"lsoa_code\"],\"name\":[1],\"type\":[\"chr\"],\"align\":[\"left\"]},{\"label\":[\"count\"],\"name\":[2],\"type\":[\"int\"],\"align\":[\"right\"]}],\"data\":[{\"1\":\"E01030757\",\"2\":\"8\"},{\"1\":\"E01030758\",\"2\":\"11\"},{\"1\":\"E01030759\",\"2\":\"15\"},{\"1\":\"E01030760\",\"2\":\"7\"},{\"1\":\"E01030761\",\"2\":\"17\"},{\"1\":\"E01030762\",\"2\":\"8\"},{\"1\":\"E01030763\",\"2\":\"5\"},{\"1\":\"E01030764\",\"2\":\"3\"},{\"1\":\"E01030765\",\"2\":\"3\"},{\"1\":\"E01030766\",\"2\":\"14\"},{\"1\":\"E01030767\",\"2\":\"7\"},{\"1\":\"E01030768\",\"2\":\"24\"},{\"1\":\"E01030769\",\"2\":\"1\"},{\"1\":\"E01030770\",\"2\":\"8\"},{\"1\":\"E01030771\",\"2\":\"1\"},{\"1\":\"E01030772\",\"2\":\"2\"},{\"1\":\"E01030773\",\"2\":\"2\"},{\"1\":\"E01030774\",\"2\":\"2\"},{\"1\":\"E01030775\",\"2\":\"2\"},{\"1\":\"E01030776\",\"2\":\"1\"},{\"1\":\"E01030777\",\"2\":\"3\"},{\"1\":\"E01030779\",\"2\":\"5\"},{\"1\":\"E01030780\",\"2\":\"1\"},{\"1\":\"E01030781\",\"2\":\"4\"},{\"1\":\"E01030782\",\"2\":\"4\"},{\"1\":\"E01030783\",\"2\":\"5\"},{\"1\":\"E01030784\",\"2\":\"5\"},{\"1\":\"E01030785\",\"2\":\"9\"},{\"1\":\"E01030786\",\"2\":\"10\"},{\"1\":\"E01030787\",\"2\":\"12\"},{\"1\":\"E01030788\",\"2\":\"15\"},{\"1\":\"E01030789\",\"2\":\"5\"},{\"1\":\"E01030790\",\"2\":\"4\"},{\"1\":\"E01030791\",\"2\":\"2\"},{\"1\":\"E01030792\",\"2\":\"2\"},{\"1\":\"E01030793\",\"2\":\"22\"},{\"1\":\"E01030794\",\"2\":\"3\"},{\"1\":\"E01030795\",\"2\":\"22\"},{\"1\":\"E01030796\",\"2\":\"2\"},{\"1\":\"E01030797\",\"2\":\"1\"},{\"1\":\"E01030798\",\"2\":\"4\"},{\"1\":\"E01030799\",\"2\":\"1\"},{\"1\":\"E01030800\",\"2\":\"26\"},{\"1\":\"E01030801\",\"2\":\"10\"},{\"1\":\"E01030802\",\"2\":\"4\"},{\"1\":\"E01030803\",\"2\":\"9\"},{\"1\":\"E01030804\",\"2\":\"4\"},{\"1\":\"E01030805\",\"2\":\"8\"},{\"1\":\"E01030806\",\"2\":\"1\"},{\"1\":\"E01030807\",\"2\":\"10\"},{\"1\":\"E01030808\",\"2\":\"3\"},{\"1\":\"E01030809\",\"2\":\"8\"},{\"1\":\"E01030810\",\"2\":\"3\"},{\"1\":\"E01030811\",\"2\":\"2\"}],\"options\":{\"columns\":{\"min\":{},\"max\":[10],\"total\":[2]},\"rows\":{\"min\":[10],\"max\":[10],\"total\":[54]},\"pages\":{}}}
+  </script>
+</div>
+
+<!-- rnb-frame-end -->
+"

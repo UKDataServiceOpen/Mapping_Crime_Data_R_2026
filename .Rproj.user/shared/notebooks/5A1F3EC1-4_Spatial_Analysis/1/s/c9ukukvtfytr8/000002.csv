@@ -1,0 +1,3 @@
+"0","# Ensure both datasets are spatially joined to the original shapefile"
+"0","surrey_lsoa <- left_join(shp_file, crimes_grouped_by_lsoa, by = c(""lsoa21cd"" = ""lsoa_code""))"
+"0","surrey_lsoa_new <- left_join(shp_file, cleaned_crimes_grouped_by_lsoa, by = c(""lsoa21cd"" = ""lsoa_code""))"

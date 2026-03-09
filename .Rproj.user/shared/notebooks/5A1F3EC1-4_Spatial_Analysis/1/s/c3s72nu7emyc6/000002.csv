@@ -1,0 +1,140 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGaWx0ZXIgZm9yIEFTQiB3aXRoaW4gU3VycnkgSGVhdGhcbmFzYl9kYXRhIDwtIGNyaW1lICU+JVxuICBmaWx0ZXIoY3JpbWVfdHlwZSA9PSBcIkFudGktc29jaWFsIGJlaGF2aW91clwiKSAlPiUgXG4gIGZpbHRlcihzdHJfZGV0ZWN0KGxzb2FfbmFtZSwgXCJeU3VycmV5IEhlYXRoXCIpKVxuXG4jIEdyb3VwIGJ5IExTT0EgYW5kIHN1bW1hcmlzZSB0aGUgY291bnRzXG5hc2JfZ3JvdXBlZF9ieV9sc29hIDwtIGFzYl9kYXRhICU+JVxuICBncm91cF9ieShsc29hX2NvZGUpICU+JVxuICBzdW1tYXJpc2UoY291bnQ9bigpKVxuXG4jIEZpbmQgdGhlIG1pc3NpbmcgTFNPQXNcbm1pc3NpbmdfbHNvYXMgPC0gc2V0ZGlmZihzaHBfZmlsZSRsc29hMjFjZCwgYXNiX2dyb3VwZWRfYnlfbHNvYSRsc29hX2NvZGUpXG5cbiMgSW1wdXRlIHRoZSBtaXNzaW5nIHZhbHVlcyBcbmZvcihtaXNzaW5nX2xzb2EgaW4gbWlzc2luZ19sc29hcykge1xuICAgIG5laWdoYm9yc19pbmRpY2VzIDwtIHN0X3RvdWNoZXMoc2hwX2ZpbGVbc2hwX2ZpbGUkbHNvYTIxY2QgPT0gbWlzc2luZ19sc29hLCAsIGRyb3AgPSBGQUxTRV0sIHNocF9maWxlKVtbMV1dXG4gICAgbmVpZ2hib3JfbHNvYXMgPC0gc2hwX2ZpbGUkbHNvYTIxY2RbbmVpZ2hib3JzX2luZGljZXNdXG5cbiAgICAjIEV4dHJhY3RpbmcgY3JpbWUgY291bnRzIGZvciBuZWlnaGJvcmluZyBMU09Bc1xuICAgIG5laWdoYm9yX2NyaW1lX2NvdW50cyA8LSBhc2JfZ3JvdXBlZF9ieV9sc29hICU+JSBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlsdGVyKGxzb2FfY29kZSAlaW4lIG5laWdoYm9yX2xzb2FzKSAlPiVcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHVsbChjb3VudCkgIyBVc2UgcHVsbCB0byBleHRyYWN0IHRoZSAnY291bnQnIGNvbHVtbiBhcyBhIHZlY3RvclxuXG4gICAgIyBDYWxjdWxhdGluZyB0aGUgYXZlcmFnZSBjcmltZSBjb3VudFxuICAgIGF2Z19jcmltZV9jb3VudCA8LSBtZWFuKG5laWdoYm9yX2NyaW1lX2NvdW50cywgbmEucm0gPSBUUlVFKVxuICAgIFxuICAgICMgUm91bmQgdGhlIGF2ZXJhZ2UgdG8gdGhlIG5lYXJlc3Qgd2hvbGUgbnVtYmVyXG4gICAgYXZnX2NyaW1lX2NvdW50X3JvdW5kZWQgPC0gcm91bmQoYXZnX2NyaW1lX2NvdW50KVxuXG4gICAgIyBEZWJ1ZzogcHJpbnQgdGhlIGF2ZXJhZ2UgY3JpbWUgY291bnQgdG8gdmVyaWZ5XG4gICAgcHJpbnQocGFzdGUoXCJBdmVyYWdlIGNyaW1lIGNvdW50IGZvciBtaXNzaW5nIExTT0FcIiwgbWlzc2luZ19sc29hLCBcIjpcIiwgYXZnX2NyaW1lX2NvdW50KSlcblxuICAgICMgQ2hlY2sgaWYgYXZnX2NyaW1lX2NvdW50IGlzIG5vdCBjYWxjdWxhdGVkIHByb3Blcmx5XG4gICAgaWYoaXMubmEoYXZnX2NyaW1lX2NvdW50KSB8fCBhdmdfY3JpbWVfY291bnQgPT0gMCkge1xuICAgICAgIyBBcHBseSBhIGRpZmZlcmVudCBzdHJhdGVneSBvciBzZXQgYSBkZWZhdWx0IHZhbHVlIG90aGVyIHRoYW4gMCBpZiB0aGF0IG1ha2VzIHNlbnNlIGluIHlvdXIgY29udGV4dFxuICAgICAgYXZnX2NyaW1lX2NvdW50IDwtIDEgIyBFeGFtcGxlOiBzZXR0aW5nIGEgZGVmYXVsdCB2YWx1ZSBpZiBtZWFuIGNhbGN1bGF0aW9uIGZhaWxzXG4gICAgfVxuXG4gICAgIyBVcGRhdGUgdGhlIGRhdGFzZXQgd2l0aCB0aGUgY2FsY3VsYXRlZCBhdmVyYWdlIGZvciB0aGUgbWlzc2luZyBMU09BXG4gICAgYXNiX2dyb3VwZWRfYnlfbHNvYSA8LSByYmluZChhc2JfZ3JvdXBlZF9ieV9sc29hLCBkYXRhLmZyYW1lKGxzb2FfY29kZSA9IG1pc3NpbmdfbHNvYSwgY291bnQgPSBhdmdfY3JpbWVfY291bnRfcm91bmRlZCkpXG59XG5gYGAifQ== -->
+
+```r
+# Filter for ASB within Surry Heath
+asb_data <- crime %>%
+  filter(crime_type == \"Anti-social behaviour\") %>% 
+  filter(str_detect(lsoa_name, \"^Surrey Heath\"))
+
+# Group by LSOA and summarise the counts
+asb_grouped_by_lsoa <- asb_data %>%
+  group_by(lsoa_code) %>%
+  summarise(count=n())
+
+# Find the missing LSOAs
+missing_lsoas <- setdiff(shp_file$lsoa21cd, asb_grouped_by_lsoa$lsoa_code)
+
+# Impute the missing values 
+for(missing_lsoa in missing_lsoas) {
+    neighbors_indices <- st_touches(shp_file[shp_file$lsoa21cd == missing_lsoa, , drop = FALSE], shp_file)[[1]]
+    neighbor_lsoas <- shp_file$lsoa21cd[neighbors_indices]
+
+    # Extracting crime counts for neighboring LSOAs
+    neighbor_crime_counts <- asb_grouped_by_lsoa %>% 
+                             filter(lsoa_code %in% neighbor_lsoas) %>%
+                             pull(count) # Use pull to extract the 'count' column as a vector
+
+    # Calculating the average crime count
+    avg_crime_count <- mean(neighbor_crime_counts, na.rm = TRUE)
+    
+    # Round the average to the nearest whole number
+    avg_crime_count_rounded <- round(avg_crime_count)
+
+    # Debug: print the average crime count to verify
+    print(paste(\"Average crime count for missing LSOA\", missing_lsoa, \":\", avg_crime_count))
+
+    # Check if avg_crime_count is not calculated properly
+    if(is.na(avg_crime_count) || avg_crime_count == 0) {
+      # Apply a different strategy or set a default value other than 0 if that makes sense in your context
+      avg_crime_count <- 1 # Example: setting a default value if mean calculation fails
+    }
+
+    # Update the dataset with the calculated average for the missing LSOA
+    asb_grouped_by_lsoa <- rbind(asb_grouped_by_lsoa, data.frame(lsoa_code = missing_lsoa, count = avg_crime_count_rounded))
+}
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+# Filter for ASB within Surry Heath
+asb_data <- crime %>%
+  filter(crime_type == \"Anti-social behaviour\") %>% 
+  filter(str_detect(lsoa_name, \"^Surrey Heath\"))
+
+# Group by LSOA and summarise the counts
+asb_grouped_by_lsoa <- asb_data %>%
+  group_by(lsoa_code) %>%
+  summarise(count=n())
+
+# Find the missing LSOAs
+missing_lsoas <- setdiff(shp_file$lsoa21cd, asb_grouped_by_lsoa$lsoa_code)
+
+# Impute the missing values 
+for(missing_lsoa in missing_lsoas) {
+    neighbors_indices <- st_touches(shp_file[shp_file$lsoa21cd == missing_lsoa, , drop = FALSE], shp_file)[[1]]
+    neighbor_lsoas <- shp_file$lsoa21cd[neighbors_indices]
+
+    # Extracting crime counts for neighboring LSOAs
+    neighbor_crime_counts <- asb_grouped_by_lsoa %>% 
+                             filter(lsoa_code %in% neighbor_lsoas) %>%
+                             pull(count) # Use pull to extract the 'count' column as a vector
+
+    # Calculating the average crime count
+    avg_crime_count <- mean(neighbor_crime_counts, na.rm = TRUE)
+    
+    # Round the average to the nearest whole number
+    avg_crime_count_rounded <- round(avg_crime_count)
+
+    # Debug: print the average crime count to verify
+    print(paste(\"Average crime count for missing LSOA\", missing_lsoa, \":\", avg_crime_count))
+
+    # Check if avg_crime_count is not calculated properly
+    if(is.na(avg_crime_count) || avg_crime_count == 0) {
+      # Apply a different strategy or set a default value other than 0 if that makes sense in your context
+      avg_crime_count <- 1 # Example: setting a default value if mean calculation fails
+    }
+
+    # Update the dataset with the calculated average for the missing LSOA
+    asb_grouped_by_lsoa <- rbind(asb_grouped_by_lsoa, data.frame(lsoa_code = missing_lsoa, count = avg_crime_count_rounded))
+}
+```"
+"1","[1] \"Average crime count for missing LSOA E01030757 : 1\"
+[1] \"Average crime count for missing LSOA E01030810 : 1\"
+[1] \"Average crime count for missing LSOA E01030803 : 2.33333333333333\"
+[1] \"Average crime count for missing LSOA E01030765 : 2\"
+[1] \"Average crime count for missing LSOA E01030759 : 1\"
+[1] \"Average crime count for missing LSOA E01030804 : 2.5\"
+[1] \"Average crime count for missing LSOA E01030811 : 1.25\"
+[1] \"Average crime count for missing LSOA E01030758 : 1\"
+[1] \"Average crime count for missing LSOA E01030771 : NaN\"
+[1] \"Average crime count for missing LSOA E01030764 : 1.66666666666667\"
+[1] \"Average crime count for missing LSOA E01030778 : 1\"
+[1] \"Average crime count for missing LSOA E01030770 : 1.5\"
+[1] \"Average crime count for missing LSOA E01030799 : 2\"
+[1] \"Average crime count for missing LSOA E01030784 : 1.25\"
+[1] \"Average crime count for missing LSOA E01030775 : 1.66666666666667\"
+[1] \"Average crime count for missing LSOA E01030792 : 1.5\"
+[1] \"Average crime count for missing LSOA E01030773 : 2\"
+[1] \"Average crime count for missing LSOA E01030780 : 1.2\"
+[1] \"Average crime count for missing LSOA E01030774 : 1.5\"
+[1] \"Average crime count for missing LSOA E01030798 : 1.4\"
+[1] \"Average crime count for missing LSOA E01030781 : 1\"
+[1] \"Average crime count for missing LSOA E01030788 : 1\"
+[1] \"Average crime count for missing LSOA E01030808 : 1.4\"
+[1] \"Average crime count for missing LSOA E01030766 : 2\"
+[1] \"Average crime count for missing LSOA E01030787 : 1.5\"
+[1] \"Average crime count for missing LSOA E01030806 : 1.14285714285714\"
+[1] \"Average crime count for missing LSOA E01030805 : 2\"
+[1] \"Average crime count for missing LSOA E01030767 : 1.33333333333333\"
+[1] \"Average crime count for missing LSOA E01030768 : 1.5\"
+[1] \"Average crime count for missing LSOA E01030762 : 1.25\"
+[1] \"Average crime count for missing LSOA E01030777 : 2.25\"
+[1] \"Average crime count for missing LSOA E01030776 : 1.6\"
+[1] \"Average crime count for missing LSOA E01030772 : 1.75\"
+"
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBMZWZ0X2pvaW4gdGhlIG5vdyBjbGVhbmVkIGRhdGEgYmFjayBpbnRvIHRoZSBzaGFwZWZpbGVcbmFzYl9sc29hIDwtIGxlZnRfam9pbihzaHBfZmlsZSwgYXNiX2dyb3VwZWRfYnlfbHNvYSwgYnkgPSBjKFwibHNvYTIxY2RcIiA9IFwibHNvYV9jb2RlXCIpKVxuYGBgIn0= -->
+
+```r
+# Left_join the now cleaned data back into the shapefile
+asb_lsoa <- left_join(shp_file, asb_grouped_by_lsoa, by = c(\"lsoa21cd\" = \"lsoa_code\"))
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+# Left_join the now cleaned data back into the shapefile
+asb_lsoa <- left_join(shp_file, asb_grouped_by_lsoa, by = c(\"lsoa21cd\" = \"lsoa_code\"))
+```"

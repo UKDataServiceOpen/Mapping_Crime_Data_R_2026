@@ -1,0 +1,12 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXNiX2xzb2FfbWlzc2luZyA8LSBsZWZ0X2pvaW4oLi4uLiwgLi4uLiwgYnkgPSBjKFwibHNvYTIxY2RcIiA9IFwibHNvYV9jb2RlXCIpKVxuYGBgIn0= -->
+
+```r
+asb_lsoa_missing <- left_join(...., ...., by = c(\"lsoa21cd\" = \"lsoa_code\"))
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+asb_lsoa_missing <- left_join(...., ...., by = c(\"lsoa21cd\" = \"lsoa_code\"))
+```"

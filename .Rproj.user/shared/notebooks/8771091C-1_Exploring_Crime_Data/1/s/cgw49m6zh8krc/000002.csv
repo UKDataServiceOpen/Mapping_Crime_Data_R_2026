@@ -1,0 +1,46 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBmb3IgZGF0YSByZWFkaW5nL21hbmlwdWxhdGlvbiBcbmxpYnJhcnkoZHBseXIpXG5saWJyYXJ5KHRpZHlyKVxubGlicmFyeShyZWFkcilcbmxpYnJhcnkodGliYmxlKVxubGlicmFyeShqYW5pdG9yKVxubGlicmFyeShyZWFkeGwpXG4jIGZvciBzcGF0aWFsIGRhdGEgYW5kIGdpc1xubGlicmFyeShzZilcbmxpYnJhcnkoZ2dtYXApXG5saWJyYXJ5KGdncGxvdDIpXG5saWJyYXJ5KGdnc3BhdGlhbClcbmxpYnJhcnkoc3BkZXApXG5saWJyYXJ5KGxlYWZsZXQpIFxubGlicmFyeShSQ29sb3JCcmV3ZXIpXG5saWJyYXJ5KHRtYXApXG4jbGlicmFyeShyZ2RhbCkgdGhpcyBwYWNrYWdlIGlzIGRlcHJlY2F0ZWRcbmxpYnJhcnkocHJldHR5bWFwcilcbmBgYCJ9 -->
+
+```r
+# for data reading/manipulation 
+library(dplyr)
+library(tidyr)
+library(readr)
+library(tibble)
+library(janitor)
+library(readxl)
+# for spatial data and gis
+library(sf)
+library(ggmap)
+library(ggplot2)
+library(ggspatial)
+library(spdep)
+library(leaflet) 
+library(RColorBrewer)
+library(tmap)
+#library(rgdal) this package is deprecated
+library(prettymapr)
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+# for data reading/manipulation 
+library(dplyr)
+library(tidyr)
+library(readr)
+library(tibble)
+library(janitor)
+library(readxl)
+# for spatial data and gis
+library(sf)
+library(ggmap)
+library(ggplot2)
+library(ggspatial)
+library(spdep)
+library(leaflet) 
+library(RColorBrewer)
+library(tmap)
+#library(rgdal) this package is deprecated
+library(prettymapr)
+```"

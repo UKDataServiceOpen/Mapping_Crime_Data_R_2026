@@ -1,0 +1,42 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG51cmwgPC0gXCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vVUtEYXRhU2VydmljZU9wZW4vTWFwcGluZ19DcmltZV9EYXRhX1JfMjAyNi9tYWluL2RhdGEvY2Vuc3VzX2RhdGEvVFMwMDZfZGVuc2l0eV9wb3B1bGF0aW9uLnhsc3hcIlxuXG4jIERvd25sb2FkIHRoZSBFeGNlbCBmaWxlIHRvIGEgdGVtcG9yYXJ5IGxvY2F0aW9uIGJlZm9yZSByZWFkaW5nXG50ZW1wX2ZpbGUgPC0gdGVtcGZpbGUoZmlsZWV4dCA9IFwiLnhsc3hcIilcbmRvd25sb2FkLmZpbGUodXJsLCB0ZW1wX2ZpbGUsIG1vZGUgPSBcIndiXCIpXG5cbmVtcGxveWVtZW50X3BvcCA8LSByZWFkX2V4Y2VsKHRlbXBfZmlsZSkgJT4lIGphbml0b3I6OmNsZWFuX25hbWVzKCkgJT4lXG4gIHNsaWNlKC1jKDE6NykpICU+JVxuICBzbGljZSgtYyg1NiwgNTcpKSAlPiUgXG4gIHJlbmFtZShsc29hID0gd2QxMDJld19wb3B1bGF0aW9uX2RlbnNpdHksICNyZW5hbWUgdGhlIHZhcmlhYmxlcyBcbiAgICAgICAgIG5hbWUgPSB4MixcbiAgICAgICAgIGVtcF9jb3VudCA9IHgzKSBcblxuaGVhZChlbXBsb3llbWVudF9wb3ApXG5cbmBgYCJ9 -->
+
+```r
+
+url <- \"https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/census_data/TS006_density_population.xlsx\"
+
+# Download the Excel file to a temporary location before reading
+temp_file <- tempfile(fileext = \".xlsx\")
+download.file(url, temp_file, mode = \"wb\")
+
+employement_pop <- read_excel(temp_file) %>% janitor::clean_names() %>%
+  slice(-c(1:7)) %>%
+  slice(-c(56, 57)) %>% 
+  rename(lsoa = wd102ew_population_density, #rename the variables 
+         name = x2,
+         emp_count = x3) 
+
+head(employement_pop)
+
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+
+url <- \"https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/census_data/TS006_density_population.xlsx\"
+
+# Download the Excel file to a temporary location before reading
+temp_file <- tempfile(fileext = \".xlsx\")
+download.file(url, temp_file, mode = \"wb\")
+
+employement_pop <- read_excel(temp_file) %>% janitor::clean_names() %>%
+  slice(-c(1:7)) %>%
+  slice(-c(56, 57)) %>% 
+  rename(lsoa = wd102ew_population_density, #rename the variables 
+         name = x2,
+         emp_count = x3) 
+
+head(employement_pop)
+
+```"

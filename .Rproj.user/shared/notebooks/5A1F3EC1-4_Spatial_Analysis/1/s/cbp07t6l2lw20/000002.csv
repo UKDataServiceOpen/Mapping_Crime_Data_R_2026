@@ -1,0 +1,56 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2FzYl9sc29hIDwtIHN0X3RyYW5zZm9ybShhc2JfbHNvYSwgNDMyNilcbmFzYl9sc29hIDwtIHN0X3RyYW5zZm9ybShhc2JfbHNvYSwgNDMyNilcblxuIyBEZWZpbmUgYSBjb2xvciBwYWxldHRlIGZ1bmN0aW9uIGJhc2VkIG9uIHRoZSAnY291bnQnIGNvbHVtblxuY29sb3JQYWxldHRlIDwtIGNvbG9yTnVtZXJpYyhwYWxldHRlID0gXCJ2aXJpZGlzXCIsIGRvbWFpbiA9IGFzYl9sc29hJGNvdW50LCBuYS5jb2xvciA9IFwidHJhbnNwYXJlbnRcIilcblxuIyBDcmVhdGUgdGhlIExlYWZsZXQgbWFwXG5sZWFmbGV0KGFzYl9sc29hKSAlPiVcbiAgYWRkUHJvdmlkZXJUaWxlcyhwcm92aWRlcnMkQ2FydG9EQi5Qb3NpdHJvbikgJT4lICMgQWRkcyBhIGxpZ2h0LXRoZW1lZCBiYXNlIG1hcFxuICBhZGRQb2x5Z29ucyhcbiAgICBmaWxsQ29sb3IgPSB+Y29sb3JQYWxldHRlKGNvdW50KSwgIyBBcHBseSB0aGUgY29sb3IgYmFzZWQgb24gdGhlICdjb3VudCcgY29sdW1uXG4gICAgd2VpZ2h0ID0gMSwgIyBCb3JkZXIgd2VpZ2h0XG4gICAgb3BhY2l0eSA9IDEsICMgQm9yZGVyIG9wYWNpdHlcbiAgICBjb2xvciA9IFwid2hpdGVcIiwgIyBCb3JkZXIgY29sb3JcbiAgICBmaWxsT3BhY2l0eSA9IDAuNywgIyBGaWxsIG9wYWNpdHlcbiAgICBwb3B1cCA9IH5wYXN0ZTAoXCJMU09BOiBcIiwgbHNvYTIxY2QsIFwiPGJyPkNvdW50OiBcIiwgY291bnQpICMgUG9wdXAgY29udGVudFxuICApICU+JVxuICBhZGRMZWdlbmQoXCJib3R0b21yaWdodFwiLCBwYWwgPSBjb2xvclBhbGV0dGUsIHZhbHVlcyA9IH5jb3VudCxcbiAgICAgICAgICAgIHRpdGxlID0gXCJBU0IgQ291bnRzXCIsXG4gICAgICAgICAgICBvcGFjaXR5ID0gMSlcblxuXG5cbmBgYCJ9 -->
+
+```r
+#asb_lsoa <- st_transform(asb_lsoa, 4326)
+asb_lsoa <- st_transform(asb_lsoa, 4326)
+
+# Define a color palette function based on the 'count' column
+colorPalette <- colorNumeric(palette = \"viridis\", domain = asb_lsoa$count, na.color = \"transparent\")
+
+# Create the Leaflet map
+leaflet(asb_lsoa) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% # Adds a light-themed base map
+  addPolygons(
+    fillColor = ~colorPalette(count), # Apply the color based on the 'count' column
+    weight = 1, # Border weight
+    opacity = 1, # Border opacity
+    color = \"white\", # Border color
+    fillOpacity = 0.7, # Fill opacity
+    popup = ~paste0(\"LSOA: \", lsoa21cd, \"<br>Count: \", count) # Popup content
+  ) %>%
+  addLegend(\"bottomright\", pal = colorPalette, values = ~count,
+            title = \"ASB Counts\",
+            opacity = 1)
+
+
+
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+#asb_lsoa <- st_transform(asb_lsoa, 4326)
+asb_lsoa <- st_transform(asb_lsoa, 4326)
+
+# Define a color palette function based on the 'count' column
+colorPalette <- colorNumeric(palette = \"viridis\", domain = asb_lsoa$count, na.color = \"transparent\")
+
+# Create the Leaflet map
+leaflet(asb_lsoa) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% # Adds a light-themed base map
+  addPolygons(
+    fillColor = ~colorPalette(count), # Apply the color based on the 'count' column
+    weight = 1, # Border weight
+    opacity = 1, # Border opacity
+    color = \"white\", # Border color
+    fillOpacity = 0.7, # Fill opacity
+    popup = ~paste0(\"LSOA: \", lsoa21cd, \"<br>Count: \", count) # Popup content
+  ) %>%
+  addLegend(\"bottomright\", pal = colorPalette, values = ~count,
+            title = \"ASB Counts\",
+            opacity = 1)
+
+
+
+```"
