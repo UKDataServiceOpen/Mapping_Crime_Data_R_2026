@@ -58,49 +58,57 @@ tm_shape(surrey_lsoa) +
 ## Solution to Activity 3
 ```{r}
 
-
-# 1) First calculate the crime rate 
-
+# 1) Calculate crime rate relative to economically inactive population
 surrey_lsoa <- surrey_lsoa %>% 
-  mutate(crime_rate2 = (count/work_count)*1000)
+  mutate(crime_rate2 = (count / econ_inactive) * 1000)
 
-
-#2) Plot using ggplot 
-
+# 2) Plot using ggplot
 ggplot() + 
   annotation_map_tile() + 
   geom_sf(data = surrey_lsoa, aes(fill = crime_rate2), alpha = 0.5) + 
-  scale_fill_gradient2(name ="Crime Rate")
+  scale_fill_gradient2(name = "Crime Rate \n(per 1,000 economically inactive)")
 
+# Improved ggplot version
+ggplot(surrey_lsoa) + 
+  geom_sf(aes(fill = crime_rate2), color = "black", lwd = 0.2) +
+  scale_fill_viridis_c(option = "magma", name = "Crime Rate\n(per 1,000 economically inactive)") +
+  labs(title = "Crime Rate by LSOA in Surrey",
+       subtitle = "Relative to economically inactive population",
+       caption = "Source: Police.uk & Census 2021") +
+  theme_minimal()
 
-#3) Plot using tmap 
-
+# 3) Plot using tmap
 tm_shape(surrey_lsoa) + 
-  tm_fill("crime_rate", style = "quantile") + 
+  tm_fill("crime_rate2", style = "quantile",
+          title = "Crime Rate\n(per 1,000 econ. inactive)") + 
   tm_borders(alpha = 0.3)
 
-
-#4) Compare the workday vs residential population 
-
+# 4) Compare crime rate vs residential population side by side
 e <- tm_shape(surrey_lsoa) + 
-  tm_fill("crime_rate", style = "quantile", title = "Workday Pop") + 
-  tm_borders(alpha = 0.3)
+  tm_fill("crime_rate2", 
+          style = "quantile", 
+          title = "Econ. Inactive Pop") + 
+  tm_borders(alpha = 0.3) +
+  tm_layout(main.title = "Crime Rate: Econ. Inactive")
 
 f <- tm_shape(surrey_lsoa) + 
-  tm_fill("crime_rate2", style = "quantile", title = "Residential pop") + 
-  tm_borders(alpha = 0.3)
+  tm_fill("crime_rate", 
+          style = "quantile", 
+          title = "Residential Pop") + 
+  tm_borders(alpha = 0.3) +
+  tm_layout(main.title = "Crime Rate: Residential")
 
-
+tmap_mode("plot")
 tmap_arrange(e, f)
 
-#5 employment rates by urban/rural (multivariate!) 
-
+# 5) Economic inactivity crime rate by urban/rural (multivariate!)
+tmap_mode("view")
 tm_shape(surrey_lsoa) +
-  tm_fill("crime_rate2", style = "jenks", palette = "Blues") +
+  tm_fill("crime_rate2", style = "jenks", palette = "Blues",
+          title = "Crime Rate\n(per 1,000 econ. inactive)") +
   tm_facets(by = "urban_rural_flag") +
   tm_borders("black", lwd = 0.3) +
-  tm_layout(title = "Workday Crime Rates: Urban vs Rural")
-
+  tm_layout(title = "Crime Rates by Economic Inactivity: Urban vs Rural")
 ```
 
 

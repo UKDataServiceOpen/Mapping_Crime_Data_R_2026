@@ -245,35 +245,44 @@ tm_shape(surrey_lsoa) +
 
 # Activity 3
 
-We have successfully mapped the residential population, now lets do the same with the variable employement. This is for all usual residents who are within employment in the area.
-
-First step is to read and clean the data as seen here:
+We have successfully mapped crime rate against the residential population. Now lets explore whether the pattern changes when we account for economic activity. Using the 2021 Census TS066 dataset, we can calculate crime rate relative to the economically inactive population, areas with higher economic inactivity often show different crime patterns to those suggested by raw counts alone."
 
 
 ```{r}
 
-url <- "https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/census_data/TS006_density_population.xlsx"
+#install.package(stringr)
+library(stringr)
 
-# Download the Excel file to a temporary location before reading
+url <- "https://raw.githubusercontent.com/UKDataServiceOpen/Mapping_Crime_Data_R_2026/main/data/census_data/TS066_economic_activity.xlsx"
+
 temp_file <- tempfile(fileext = ".xlsx")
 download.file(url, temp_file, mode = "wb")
 
-employement_pop <- read_excel(temp_file) %>% janitor::clean_names() %>%
-  slice(-c(1:7)) %>%
-  slice(-c(56, 57)) %>% 
-  rename(lsoa = wd102ew_population_density, #rename the variables 
-         name = x2,
-         emp_count = x3) 
 
-head(employement_pop)
+economic_activity <- read_excel(temp_file, skip = 7) %>%
+  janitor::clean_names() %>%
+  slice(-c(1, 57, 58)) %>%                          # remove footer rows
+  select(1, 2, 52) %>%                           # LSOA code/name, total pop 16+, economically inactive
+  rename(
+    lsoa = x2021_super_output_area_lower_layer,
+    total_pop_16plus = total_all_usual_residents_aged_16_years_and_over,
+    econ_inactive = economically_inactive
+  ) %>%
+  mutate(
+    lsoa_code = str_extract(lsoa, "^E\\d+"),     # extract just the LSOA code
+    econ_inactive = as.numeric(econ_inactive),
+    total_pop_16plus = as.numeric(total_pop_16plus)
+  )
 
+head(economic_activity)
 ```
+
 
 
 And then remember you need to join this to our shapefile by using the left_join function.
 
 ```{r}
-surrey_lsoa <- left_join(surrey_lsoa, employement_pop, by = c("lsoa21cd"="lsoa"))
+surrey_lsoa <- left_join(surrey_lsoa, economic_activity, by = c("lsoa21cd"="lsoa_code"))
 
 head(surrey_lsoa)
 
@@ -281,7 +290,7 @@ head(surrey_lsoa)
 
 
 
-So now you've added the work population count, it time to calculate the crime rate. Follow the steps below to try and complete the activity. 
+So now you've added the work econ count, it time to calculate the crime rate. Follow the steps below to try and complete the activity. 
 
 
 Steps: 
@@ -289,7 +298,7 @@ Steps:
 1  First calculate the crime rate 
 2. Plot using ggplot 
 3. Plot using tmap 
-4. Plot both maps (residential and workday) together using tmap_arrange 
+4. Plot both maps (residential and econ) together using tmap_arrange 
 5. Plot a cartogram of residential population
 
 Is there a difference between the crime rate when using employement population compared to residential population? Would we expect to see these trends?
