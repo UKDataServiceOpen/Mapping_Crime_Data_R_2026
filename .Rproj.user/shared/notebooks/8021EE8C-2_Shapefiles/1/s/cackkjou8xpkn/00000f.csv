@@ -1,5 +1,0 @@
-"0","crimes_grouped_by_lsoa <- crime %>%"
-"0","  group_by(lsoa_code) %>%"
-"0","  summarise(count=n())"
-"0",""
-"0","head(crimes_grouped_by_lsoa)"

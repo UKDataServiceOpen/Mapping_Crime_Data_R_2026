@@ -1,6 +1,0 @@
-"0","cleaned_crimes_grouped_by_lsoa <- surrey_heath_crimes %>%"
-"0","  group_by(lsoa_code) %>%"
-"0","  summarise(count = n())"
-"0",""
-"0","# View the count of crimes by type"
-"0","cleaned_crimes_grouped_by_lsoa"

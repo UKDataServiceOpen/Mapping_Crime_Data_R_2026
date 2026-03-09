@@ -1,2 +1,0 @@
-"0","# Identify LSOAs with no neighbors"
-"0","no_neighbors <- sapply(neighbors, function(x) length(x) == 0)"

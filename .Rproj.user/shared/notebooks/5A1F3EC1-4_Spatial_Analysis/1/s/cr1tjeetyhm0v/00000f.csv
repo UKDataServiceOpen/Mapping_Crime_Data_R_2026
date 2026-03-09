@@ -1,1 +1,0 @@
-"0","missing_lsoas <- setdiff(shp_file$lsoa21cd, cleaned_crimes_grouped_by_lsoa$lsoa_code)"
