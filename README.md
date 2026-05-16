@@ -43,3 +43,50 @@ Happy coding! 🖥️📊
    Office for National Statistics. (2022). Census 2021 Table TS066: Economic activity. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
 5. **Rural Urban Classification**  
    Office for National Statistics. (2021). Rural Urban Classification (2021) of LSOAs in England and Wales. Open Geography Portal. Retrieved from https://geoportal.statistics.gov.uk
+
+
+   ## Data Sources & Licensing
+
+This workshop uses five datasets, all publicly available under open licences. The workshop focuses on **mapping crime data** using open-source police recorded crime statistics alongside census and geographic boundary data.
+
+All five datasets are released under the **Open Government Licence v3.0 (OGL v3.0)**, which permits free reuse, redistribution, and adaptation for both commercial and non-commercial purposes, provided that the source is acknowledged. No special registration or application is required to access any of these datasets in the forms used in this workshop.
+
+---
+
+### 1. Street-Level Crime Data
+**Source:** UK Police API — [data.police.uk](https://data.police.uk)  
+**Licence:** [Open Government Licence v3.0 (OGL v3.0)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  
+**Citation:** UK Police API. (2026). Street-level crime data. *data.police.uk*. Retrieved February 27, 2026, from https://data.police.uk
+
+---
+
+### 2. LSOA Boundaries (England, 2021)
+**Source:** UK Data Service Census Support — [borders.ukdataservice.ac.uk](https://borders.ukdataservice.ac.uk)  
+**Licence:** [Open Government Licence v3.0 (OGL v3.0)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  
+**Citation:** UK Data Service Census Support. (2021). England LSOA boundaries 2021. Retrieved from https://borders.ukdataservice.ac.uk
+
+---
+
+### 3. Resident Population — Census 2021 Table TS001
+**Source:** Office for National Statistics (ONS) via Nomis / UK Data Service — [statistics.ukdataservice.ac.uk](https://statistics.ukdataservice.ac.uk)  
+**Licence:** [Open Government Licence v3.0 (OGL v3.0)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  
+**Citation:** Office for National Statistics. (2022). Census 2021 Table TS001: Number of usual residents. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+
+---
+
+### 4. Economic Activity — Census 2021 Table TS066
+**Source:** Office for National Statistics (ONS) via Nomis / UK Data Service — [statistics.ukdataservice.ac.uk](https://statistics.ukdataservice.ac.uk)  
+**Licence:** [Open Government Licence v3.0 (OGL v3.0)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  
+**Citation:** Office for National Statistics. (2022). Census 2021 Table TS066: Economic activity. Nomis/UK Data Service. Retrieved from https://statistics.ukdataservice.ac.uk
+
+---
+
+### 5. Rural Urban Classification (2021) of LSOAs — England and Wales
+**Source:** Office for National Statistics (ONS) via Open Geography Portal — [geoportal.statistics.gov.uk](https://geoportal.statistics.gov.uk)  
+**Licence:** [Open Government Licence v3.0 (OGL v3.0)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  
+**Citation:** Office for National Statistics. (2021). Rural Urban Classification (2021) of LSOAs in England and Wales. Open Geography Portal. Retrieved from https://geoportal.statistics.gov.uk
+
+--
+
+> **OGL v3.0 Attribution Notice:** Contains public sector information licensed under the Open Government Licence v3.0.  
+> See: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
